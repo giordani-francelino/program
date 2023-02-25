@@ -1,5 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Copyright (C) 2023 Your Name &lt;francelino at ifnmg&gt;
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 package br.com.francelino.program;
 
@@ -46,6 +60,11 @@ public class Program {
         System.out.println("Retângulo ladoA: " + r1.getLadoA());
         System.out.println("Retângulo ladoB: " + r1.getLadoB());
         System.out.println("Retângulo Área: " + r1.calcularArea());
+
+        Ponto p1 = new Ponto(0.0,0.0);
+        Ponto p2 = new Ponto(3.0,4.0);
+        System.out.println("Distância: " + p1.calcularDistancia(p2));
+        
 
     }
 }

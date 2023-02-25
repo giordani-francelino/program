@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Casa
+ * Copyright (C) 2023 Your Name &lt;francelino at ifnmg&gt;
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -15,36 +15,57 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-
 package br.com.francelino.program;
+
+import java.lang.Math;
 
 /**
  *
  * @author Your Name &lt;francelino at ifnmg&gt;
  */
-public class Retangulo {
+public class Ponto {
 
-    private float ladoA;
-    private float ladoB;
+    private Double x;
+    private Double y;
 
-    public void setLadoA(float ladoA) {
-        this.ladoA = ladoA;
+    public Ponto() {
+        x = 0.0;
+        y = 0.0;
     }
 
-    public void setLadoB(float ladoB) {
-        this.ladoB = ladoB;
+    public Ponto(Double x, Double y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public float getLadoA() {
-        return ladoA;
+    public Double getX() {
+        return x;
     }
 
-    public float getLadoB() {
-        return ladoB;
+    public void setX(Double x) {
+        this.x = x;
     }
 
-    public float calcularArea() {
-        return ladoA * ladoB;
+    public Double getY() {
+        return y;
+    }
+
+    public void setY(Double y) {
+        this.y = y;
+
+    }
+
+    public Double calcularDistancia(Ponto p) {
+        Double distancia;
+        distancia = Math.pow(this.x - p.x, 2.0) + Math.pow(this.y - p.y, 2.0);
+
+        distancia = Math.sqrt(distancia);
+        return distancia;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + "0";
     }
 
 }
