@@ -24,32 +24,28 @@ package br.com.francelino.program;
 public class Quadrado {
 
     private float lado;
-    
-    public Quadrado(){
-        
+
+    public Quadrado() {
+
     }
-    
-    public Quadrado(float lado) throws Exception{
-        setLado(lado);
+
+    public Quadrado(float lado) throws Exception {
+        this.setLado(lado);
+    }
+ 
+    public float getLado() {
+        return this.lado;
     }
 
     public void setLado(float lado) throws Exception {
         if (lado < 0) {
             throw new Exception("Lados não podem ser negativos");
-        } 
-            this.lado = lado;
-        
-    }
-//<editor-fold defaultstate="collapsed" desc="comment">
-    //from
-//</editor-fold>
+        }
+        this.lado = lado;
 
-    public float getLado() {
-        return this.lado;
-//        return lado;
     }
 
-    public float calcularArea() {
+     public float calcularArea() {
         return lado * lado;
     }
 }

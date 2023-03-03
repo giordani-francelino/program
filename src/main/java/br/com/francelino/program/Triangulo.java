@@ -1,5 +1,8 @@
+package br.com.francelino.program;
+
+
 /*
- * Copyright (C) 2023 Casa
+ * Copyright (C) 2023 Caixa
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -15,17 +18,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package br.com.francelino.program;
-
 /**
  *
- * @author Your Name &lt;francelino at ifnmg&gt;
+ * @author Caixa
  */
-public class Retangulo {
+public class Triangulo {
 
     private float ladoA;
     private float ladoB;
+    private float ladoC;
 
+//<editor-fold defaultstate="collapsed" desc="getters and setters">
     public float getLadoA() {
         return ladoA;
     }
@@ -48,8 +51,24 @@ public class Retangulo {
         this.ladoB = ladoB;
     }
 
+    public float getLadoC() {
+        return ladoC;
+    }
+
+    public void setLadoC(float ladoC) throws Exception {
+        if (ladoC < 0) {
+            throw new Exception("Lado não pode ser negativo");
+        }
+        this.ladoC = ladoC;
+        //</editor-fold>
+    }
+    
     public float calcularArea() {
-        return ladoA * ladoB;
+        float area = 0;
+        float cosA = 0;
+        float cosB = 0;
+        
+        return area;
     }
 
 }

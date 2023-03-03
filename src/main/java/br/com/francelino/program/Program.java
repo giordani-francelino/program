@@ -26,7 +26,7 @@ import java.util.logging.Logger;
  */
 public class Program {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int x = 10;
 
         String nome;
@@ -53,6 +53,8 @@ public class Program {
 //            Logger.getLogger(Program.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
         }
+
+        
         Retangulo r1;
         r1 = new Retangulo();
         r1.setLadoA(2.3f);
